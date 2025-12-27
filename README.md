@@ -1,7 +1,8 @@
 # NFC-Reader
 
 ## 🚀 Project Log (27/12/2025)
-<img width="872" height="582" alt="image" src="https://github.com/user-attachments/assets/7aba1395-fbdf-478d-a388-f09aba4f2839" />
+<img width="883" height="548" alt="image" src="https://github.com/user-attachments/assets/683f2902-36d4-4aef-abd7-b5997f1010a7" />
+
 
 ⚡ **Buck-Boost Converter (LM5176 Section)**
 
