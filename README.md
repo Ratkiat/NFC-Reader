@@ -38,3 +38,9 @@ Buck-Boost Converter คือวงจรแปลงไฟ DC-DC ที่ม�
 - ห้ามยุ่งกับขา CMD (Pin 30) ของ ESP32 เพราะเป็น Internal Flash.
 - ขา LNA (Pin 2) ต้องต่อ Matching Network และหัว U.FL 73412-0110 สำหรับ Wi-Fi ที่ 50 ohm
       <img width="698" height="363" alt="image" src="https://github.com/user-attachments/assets/7745a5ee-760b-4bbc-9bc6-c994a9f3755f" />
+
+⚡ **ESP32 Pins:**
+-  **IO0 (GPIO0): Boot Mode Strapping Pin**
+-  Logic High: Run internal firmware (Normal Mode)
+-  Logic Low: Enter UART Download Mode (Flash Mode)
+-  Design Note: ต้องมี External Pull-up $10k\Omega$ เพื่อความเสถียร
