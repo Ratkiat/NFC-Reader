@@ -39,8 +39,14 @@ Buck-Boost Converter คือวงจรแปลงไฟ DC-DC ที่ม�
 - ขา LNA (Pin 2) ต้องต่อ Matching Network และหัว U.FL 73412-0110 สำหรับ Wi-Fi ที่ 50 ohm
       <img width="698" height="363" alt="image" src="https://github.com/user-attachments/assets/7745a5ee-760b-4bbc-9bc6-c994a9f3755f" />
 
+
 ⚡ **ESP32 Pins:**
 #### 1. IO0 (GPIO0): Boot Mode Strapping Pin
 -  Logic High: Run internal firmware (Normal Mode)
 -  Logic Low: Enter UART Download Mode (Flash Mode)
 -  Design Note: ต้องมี External Pull-up $10k\Omega$ เพื่อความเสถียร
+
+### 🔍 Advanced Pin Knowledge
+- **CMD (Pin 30):** High-speed internal flash interface. **Strictly NC.** Do not use as GPIO or test point.
+- **LNA (Pin 2):** 2.4 GHz RF I/O. Requires precision $50 \Omega$ matching network. 
+- **Layout Rule:** Place matching components (0402 size) within 2mm of the LNA pin to minimize parasitic effects.
